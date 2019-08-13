@@ -1,10 +1,12 @@
-[
+{
+    "lesson":"states",
+    "words":[
     {
         "name": "Bielsko-Biała",
         "population": "173 479",
         "voivodeship": "Śląskie",
         "surface": "124.5",
-        "img":"https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/POL_Bielsko-Bia%C5%82a_COA.svg/200px-POL_Bielsko-Bia%C5%82a_COA.svg.png"
+        "img":"https://upload.wikimedia.org/wikipedia/commons/9/9a/POL_Bielsko-Bia%C5%82a_COA.svg"
     },
     {
         "name": "Bytom",
@@ -1121,3 +1123,4 @@
         "img":"https://upload.wikimedia.org/wikipedia/commons/1/1c/POL_G%C5%82ucho%C5%82azy_COA.svg"
     }
 ]
+}
