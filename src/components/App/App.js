@@ -2,18 +2,24 @@ import React, {Component} from 'react';
 import styles from './App.module.scss';
 import ResultList from '../ResultList/ResultList';
 import data from '../../assets/data/states.json'
+import Search from '../Search/Search'
+import DisplayWarning from '../DisplayWarning/DisplayWarning';
+import {Header} from '../Header/Header';
 class App extends Component {
 
   state = {
     cities:[],
+    value: '',
   }
 
   // filter users quals input value,and change in state
   filterUsers(e){
     const text = e.currentTarget.value;
     const filteredUsers = this.getFilteredUsersForText(text);
+    
     this.setState({
-      cities:filteredUsers
+      cities:filteredUsers,
+      value:text
     })
   }
 
@@ -28,18 +34,19 @@ class App extends Component {
  
   render(){
 
-    const {cities} = this.state;
+    const {cities,value} = this.state;
 
     return (
       <div className={styles.app}>
-        <h1>App</h1>
-        <input 
-          type="text"
-          onInput={this.filterUsers.bind(this)}
-         />
+        <Header/>
+        <Search 
+          filter={this.filterUsers.bind(this)}
+          value={value}
+          />
          <br />
-         {/* {cities < 1 ? 'Brak rekordów': null} */}
-        <ResultList cities={cities}/>
+         {cities.length < 1 && value !== '' ? <DisplayWarning/> : null}
+         {value !== '' ? <ResultList cities={cities}/> : null}
+        
       </div>
     );
   }
