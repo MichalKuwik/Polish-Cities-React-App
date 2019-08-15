@@ -1,11 +1,20 @@
 
 .header{
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  
+  margin-top:2rem;
 }
 .img{
   width:200px;
   height: 100px;
+}
+
+.title{
+  margin-left:2rem;
+  color:#fff;
+}
+
+.spanEl{
+  color:red;
 }

@@ -3,7 +3,9 @@ import styles from './DisplayWarning.module.scss';
 
 const DisplayWarning = () => {
   return(
-    <p>Nie znaleziono podanej wartości!</p>
+    <div className={styles.wrapper}>
+      <p className={styles.info}>Nie znaleziono podanej wartości!</p>
+    </div>
   )
 }
 

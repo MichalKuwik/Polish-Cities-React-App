@@ -1,7 +1,8 @@
 import React from 'react';
 import styles from './Search.module.scss';
+import Button from '../Button/Button';
 
-const Search = ({filter,value}) => {
+const Search = ({filter,value,resetFn}) => {
   return(
     <div className={styles.wrapper}>
       <input 
@@ -10,6 +11,8 @@ const Search = ({filter,value}) => {
         value={value}
         className={styles.input}
       />
+      {value !== '' ? <Button resetFn={resetFn}/> : null}
+      
     </div>
   )
 }

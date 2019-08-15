@@ -23,13 +23,17 @@ class App extends Component {
     })
   }
 
- 
-
-  //return new array for filter() and equals with name of city {user.name}
+ //return new array for filter() and equals with name of city {user.name}
   getFilteredUsersForText(text) {
     return data.filter(user => user.name.toLowerCase().includes(text.toLowerCase()))
   }
 
+  //reset button
+  handleResetContent = () => {
+    this.setState({
+      value:''
+    })
+  }
   
  
   render(){
@@ -42,6 +46,7 @@ class App extends Component {
         <Search 
           filter={this.filterUsers.bind(this)}
           value={value}
+          resetFn={this.handleResetContent}
           />
          <br />
          {cities.length < 1 && value !== '' ? <DisplayWarning/> : null}

@@ -1,0 +1,21 @@
+.btn{
+  margin-left:1rem;
+  padding:5px 10px;
+  font-size:1.5rem;
+  background: #1e5dc8;
+  border:2px solid #fff;
+  color:#fff;
+  animation: anim-item 0.5s ease-in-out .2s both;
+}
+
+
+@keyframes anim-item {
+  0%{
+    opacity:0;
+    transform: translateX(20px)
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
