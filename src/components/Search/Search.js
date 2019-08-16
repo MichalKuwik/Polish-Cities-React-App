@@ -7,12 +7,17 @@ const Search = ({filter,value,resetFn}) => {
     <div className={styles.wrapper}>
       <input 
         type="text"
+        id="name"
         onChange={filter}
         value={value}
         className={styles.input}
+        placeholder=" "
       />
+      <label className={styles.label} htmlFor="name">
+          Wpisz nazwę miasta
+      </label>
+      <div className={styles.formItemBar} />
       {value !== '' ? <Button resetFn={resetFn}/> : null}
-      
     </div>
   )
 }

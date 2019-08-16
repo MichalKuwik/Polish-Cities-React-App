@@ -53,3 +53,19 @@
     transform: translateY(0);
   }
 }
+
+//media queires
+@media screen and (min-width:1024px){
+  .img{
+    margin-top:70px;
+  }
+}
+
+@media screen and (max-width:767px){
+  .item{
+    width:90vw;
+  }
+  .img{
+    margin-top:60px;
+  }
+}

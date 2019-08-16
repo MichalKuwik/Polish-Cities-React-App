@@ -18,3 +18,13 @@
 .spanEl{
   color:red;
 }
+
+@media screen and (max-width:677px){
+  .header{
+    flex-direction: column;
+  }
+  .title{
+    margin:1rem 0;
+    font-size:1.6rem;
+  }
+}
