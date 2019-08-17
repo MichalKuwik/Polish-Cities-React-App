@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,900&display=swap');
+
+*{
+  font-family: 'Montserrat'
+}
+
 .wrapper{
   width:80vw;
   height: 10vh;
@@ -20,6 +26,7 @@
   position: absolute;
   left: 0%;
   bottom:0;
+
 }
 
 .input:focus + .label{
@@ -37,6 +44,7 @@
   left:0;
   bottom:5%;
   font-size:1rem;
+  font-weight: 200;
   transition: 1s cubic-bezier(0.165, 0.84, 0.44, 1); 
 }
 .formItemBar{
@@ -44,7 +52,7 @@
   left:0%;
   bottom:-10%;
   background: #fff;
-  height: 2px;
+  height: 1px;
   width:60%;
 }
 

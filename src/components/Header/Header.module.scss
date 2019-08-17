@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,900&display=swap');
 
 .header{
   display: flex;
@@ -13,18 +14,22 @@
 .title{
   margin-left:2rem;
   color:#fff;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  
 }
 
 .spanEl{
   color:red;
 }
 
+
 @media screen and (max-width:677px){
   .header{
     flex-direction: column;
   }
   .title{
-    margin:1rem 0;
-    font-size:1.6rem;
+    margin:2rem 0 0 0;
+    font-size:2rem;
   }
 }

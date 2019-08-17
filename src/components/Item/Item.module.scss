@@ -9,8 +9,8 @@
   position: relative;
   width:32%;
   height: 380px;
-  background: #fff;
-  border:3px solid #1e5dc8;
+  // background: #fff;
+  border:2px solid #fff;
   animation: anim-item 0.5s linear 0.1s both;
   border-radius: 20px;
   margin-bottom:50px;
@@ -20,11 +20,12 @@
   &::after{
     content: '';
     position: absolute;
-    top:0;
+    top:1%;
     left:0;
     width:100%;
-    height: 45%;
-    background: linear-gradient(180deg, rgba(50,200,183,1) 0%, rgba(27,130,172,1) 36%, rgba(16,95,166,1) 56%);
+    height: 42%;
+    background: rgba(255, 255, 255,0.3);
+    // background: linear-gradient(180deg, rgba(50,200,183,1) 0%, rgba(27,130,172,1) 36%, rgba(16,95,166,1) 56%);
     border-radius: 15px;
     padding:10px 0;
     z-index: -999999;
@@ -57,7 +58,11 @@
 //media queires
 @media screen and (min-width:1024px){
   .img{
-    margin-top:70px;
+    margin-top:50px;
+  }
+  .item{
+    width:22%;
+    height: 400px;
   }
 }
 

@@ -35,14 +35,13 @@ class App extends Component {
     })
   }
   
- 
-  render(){
+    render(){
 
     const {cities,value} = this.state;
 
     return (
       <div className={styles.app}>
-        <Header/>
+        <Header />
         <Search 
           filter={this.filterUsers.bind(this)}
           value={value}

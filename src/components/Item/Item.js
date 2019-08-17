@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './Item.module.scss';
+import PropTypes from 'prop-types';
 
 function Item({city}){
   return(
@@ -10,10 +11,14 @@ function Item({city}){
       <p className={styles.info}>Obszar: {city.surface} km²</p>
       <img 
         src={city.img} 
-        alt="image"
+        alt="img"
         className={styles.img} />
     </div>
   )
+}
+
+Item.propTypes = {
+  city: PropTypes.object.isRequired,
 }
 
 export default Item;

@@ -1,15 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,900&display=swap');
+
 .btn{
   margin-left:1rem;
   padding:5px 10px;
   font-size:1.5rem;
-  background: #fff;
-  border:none;
-  border-radius: 5px;
-  color:#1e5dc8;
+  border:1px solid #fff;
+  background: none;
+  color:#fff;
   position: absolute;
   right:20%;
   bottom:0;
   animation: anim-item 0.5s ease-in-out .2s both;
+  font-family: 'Montserrat';
+  font-weight: 300;
 }
 
 

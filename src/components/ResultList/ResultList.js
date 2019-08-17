@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './ResultList.module.scss';
 import Item from '../Item/Item';
+import PropTypes from 'prop-types';
 
 function ResultList({cities}){
 
@@ -15,6 +16,10 @@ function ResultList({cities}){
       {citiesResult}
     </div>
   )
+}
+
+ResultList.propTypes = {
+  cities: PropTypes.array.isRequired,
 }
 
 export default ResultList;
