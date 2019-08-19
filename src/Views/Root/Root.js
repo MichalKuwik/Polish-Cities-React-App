@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
-import styles from './App.module.scss';
-import ResultList from '../ResultList/ResultList';
+import styles from './Root.module.scss';
+import ResultList from '../../components/ResultList/ResultList';
 import data from '../../assets/data/states.json'
-import Search from '../Search/Search'
-import DisplayWarning from '../DisplayWarning/DisplayWarning';
-import {Header} from '../Header/Header';
-class App extends Component {
+import Search from '../../components/Search/Search'
+import DisplayWarning from '../../components/DisplayWarning/DisplayWarning';
+import {Header} from '../../components/Header/Header';
+class Root extends Component {
 
   state = {
     cities:[],
@@ -57,4 +57,4 @@ class App extends Component {
   
 }
 
-export default App;
+export default Root;
