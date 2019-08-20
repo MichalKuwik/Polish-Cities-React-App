@@ -1,21 +1,35 @@
 import React from 'react';
 import styles from './HeaderNav.module.scss';
 import {NavLink} from 'react-router-dom';
+import appImg from '../../../assets/img/data.png'
+import descrImg from '../../../assets/img/light.png';
 
 const HeaderNav = () => (
-  <nav>
+  <nav className={styles.nav}>
     <NavLink
       to="/"
       exact
       activeClassName={styles.activeNavItem}
       className={styles.navItem}
-      >Applikacja
+      >
+        <img 
+          src={appImg} 
+          alt=''
+          className={styles.img}
+          />
+       
     </NavLink>
+  
     <NavLink
       to="/about"
       activeClassName={styles.activeNavItem}
       className={styles.navItem}
-      >Opis
+      >
+      <img 
+          src={descrImg} 
+          alt=''
+          className={styles.img}
+          />
     </NavLink>
   </nav>
 )

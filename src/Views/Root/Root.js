@@ -5,6 +5,9 @@ import data from '../../assets/data/states.json'
 import Search from '../../components/Search/Search'
 import DisplayWarning from '../../components/DisplayWarning/DisplayWarning';
 import {Header} from '../../components/Header/Header';
+import {BrowserRouter,Route,Switch} from 'react-router-dom';
+import About from '../About/About';
+
 class Root extends Component {
 
   state = {
@@ -40,18 +43,28 @@ class Root extends Component {
     const {cities,value} = this.state;
 
     return (
-      <div className={styles.app}>
-        <Header />
-        <Search 
-          filter={this.filterUsers.bind(this)}
-          value={value}
-          resetFn={this.handleResetContent}
-          />
-         <br />
-         {cities.length < 1 && value !== '' ? <DisplayWarning/> : null}
-         {value !== '' ? <ResultList cities={cities}/> : null}
-        
-      </div>
+      <BrowserRouter>
+        <div className={styles.app}>
+          <Header />
+          <Switch>
+            <Route path="/about" component={About} />
+            <Route path="/" render= {props => (
+              <>
+                <Search 
+                  filter={this.filterUsers.bind(this)}
+                  value={value}
+                  resetFn={this.handleResetContent}
+                  />
+                <br />
+                {cities.length < 1 && value !== '' ? <DisplayWarning/> : null}
+                {value !== '' ? <ResultList cities={cities}/> : null}
+              </>
+
+            )} />
+            
+          </Switch>
+        </div>
+      </BrowserRouter>
     );
   }
   
