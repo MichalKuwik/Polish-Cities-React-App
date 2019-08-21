@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,900&display=swap');
+
+.section{
+  width:35vw;
+  margin:4rem auto;
+  font-family: 'Montserrat';
+  border:1px solid #fff;
+  padding:30px;
+ 
+
+  & .header{
+    color:#fff;
+    font-weight: 300;
+    margin-bottom:1.5rem;
+    text-transform: uppercase;
+  }
+  & .descr{
+    color:#fff;
+    font-weight: 300;
+  }
+}
+
+@media screen and (max-width:768px){
+  .section{
+    width:60vw;
+  }
+}
+
+@media screen and (max-width:767px){
+  .section{
+    width:90vw;
+    padding: 30px 10px;
+  }
+}
