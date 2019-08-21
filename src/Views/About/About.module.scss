@@ -6,6 +6,18 @@
   font-family: 'Montserrat';
   border:1px solid #fff;
   padding:30px;
+  animation: anim-cont 0.8s linear 0.2s both;
+  position: relative;
+
+  &::before{
+    position: absolute;
+    content:'';
+    width:100%;
+    height: 100%;
+    border:1px solid #fff;
+    left:1%;
+    top:1%;
+  }
  
 
   & .header{
@@ -13,10 +25,19 @@
     font-weight: 300;
     margin-bottom:1.5rem;
     text-transform: uppercase;
+    animation: anim-top .6s linear 0.3s both;
   }
   & .descr{
     color:#fff;
     font-weight: 300;
+    animation: anim-bottom .6s linear 0.4s both;
+
+    & .span{
+      color:red;
+      font-weight: 600;
+      font-size: 1.1rem;
+      
+    }
   }
 }
 
@@ -30,5 +51,35 @@
   .section{
     width:90vw;
     padding: 30px 10px;
+  }
+}
+@keyframes anim-cont{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes anim-top{
+  0%{
+    opacity:0;
+    transform: translateY(-10px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes anim-bottom{
+  0%{
+    opacity:0;
+    transform: translateY(10px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
   }
 }
