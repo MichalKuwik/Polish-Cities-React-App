@@ -1,4 +1,4 @@
-    --> Click https://michalkuwik.github.io/Polish-Cities-React-App/ <-- 
+   https://michalkuwik.github.io/Polish-Cities-React-App/ <-- 
 
                 --> Polish-cities-App <--
 
