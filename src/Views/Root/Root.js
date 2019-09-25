@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import styles from './Root.module.scss';
 import ResultList from '../../components/ResultList/ResultList';
 import data from '../../assets/data/states.json'
 import Search from '../../components/Search/Search'
@@ -7,6 +6,11 @@ import DisplayWarning from '../../components/DisplayWarning/DisplayWarning';
 import {Header} from '../../components/Header/Header';
 import {BrowserRouter,Route,Switch} from 'react-router-dom';
 import About from '../About/About';
+import styled from 'styled-components';
+
+const App = styled.div`
+  text-align: center;
+`
 
 class Root extends Component {
 
@@ -43,8 +47,9 @@ class Root extends Component {
     const {cities,value} = this.state;
 
     return (
+
       <BrowserRouter>
-        <div className={styles.app}>
+        <App>
           <Header />
           <Switch>
             <Route path="/about" component={About} />
@@ -63,8 +68,9 @@ class Root extends Component {
             )} />
             
           </Switch>
-        </div>
+        </App>
       </BrowserRouter>
+      
     );
   }
   
