@@ -7,6 +7,7 @@ import {Header} from '../../components/Header/Header';
 import {BrowserRouter,Route,Switch} from 'react-router-dom';
 import About from '../About/About';
 import styled from 'styled-components';
+import {GlobalStyle} from './RootGlobalStyle';
 
 const App = styled.div`
   text-align: center;
@@ -47,7 +48,8 @@ class Root extends Component {
     const {cities,value} = this.state;
 
     return (
-
+      <>
+      <GlobalStyle/>
       <BrowserRouter>
         <App>
           <Header />
@@ -64,12 +66,11 @@ class Root extends Component {
                 {cities.length < 1 && value !== '' ? <DisplayWarning/> : null}
                 {value !== '' ? <ResultList cities={cities}/> : null}
               </>
-
             )} />
-            
           </Switch>
         </App>
       </BrowserRouter>
+      </>
       
     );
   }
