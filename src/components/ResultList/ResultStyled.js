@@ -1,4 +1,6 @@
-.resultWrapper{
+import styled from 'styled-components';
+
+export const ResultWrapper = styled.div`
   width:90vw;
   display: flex;
   flex-wrap: wrap;
@@ -7,10 +9,8 @@
   margin: 0 auto;
   z-index:99999;
   margin-top:4rem;
-}
 
-@media screen and (max-width:767px){
-  .resultWrapper{
+  @media screen and (max-width:767px){
     flex-direction: column;
   }
-}
+`

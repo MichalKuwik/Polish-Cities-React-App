@@ -1,7 +1,7 @@
 import React from 'react';
-import styles from './ResultList.module.scss';
 import Item from '../Item/Item';
 import PropTypes from 'prop-types';
+import {ResultWrapper} from './ResultStyled';
 
 function ResultList({cities}){
 
@@ -12,9 +12,9 @@ function ResultList({cities}){
   ))
 
   return(
-    <div className={styles.resultWrapper}>
+    <ResultWrapper>
       {citiesResult}
-    </div>
+    </ResultWrapper>
   )
 }
 
