@@ -1,37 +1,30 @@
 import React from 'react';
-import styles from './HeaderNav.module.scss';
-import {NavLink} from 'react-router-dom';
 import appImg from '../../../assets/img/data.png'
 import descrImg from '../../../assets/img/light.png';
+import {NavWrapper,NavLinkStyled,ImageSvg} from './HeaderNavStyled';
 
 const HeaderNav = () => (
-  <nav className={styles.nav}>
-    <NavLink
+  <NavWrapper>
+    <NavLinkStyled
       to="/"
       exact
-      activeClassName={styles.activeNavItem}
-      className={styles.navItem}
       >
-        <img 
+        <ImageSvg 
           src={appImg} 
           alt=''
-          className={styles.img}
           />
        
-    </NavLink>
+    </NavLinkStyled>
   
-    <NavLink
+    <NavLinkStyled
       to="/about"
-      activeClassName={styles.activeNavItem}
-      className={styles.navItem}
       >
-      <img 
+      <ImageSvg 
           src={descrImg} 
           alt=''
-          className={styles.img}
-          />
-    </NavLink>
-  </nav>
+         />
+    </NavLinkStyled>
+  </NavWrapper>
 )
 
 export default HeaderNav;
