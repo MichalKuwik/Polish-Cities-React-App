@@ -1,38 +1,37 @@
 import React from 'react';
-import styles from './Item.module.scss';
 import PropTypes from 'prop-types';
 import surfaceImg from '../../assets/img/soil.png';
 import populImg from '../../assets/img/family.png';
 import voivodeshipImg from '../../assets/img/map.png';
+import {ItemWrapper,HeaderItem,Info,ImageIcon,Image} from './ItemStyled';
 
 function Item({city}){
   return(
-    <div className={styles.item}>
-      <p className={styles.header}>{city.name}</p>
-      <p className={styles.info}><img 
-          className={styles.imgIcon} 
+    <ItemWrapper>
+      <HeaderItem>{city.name}</HeaderItem>
+      <Info>
+        <ImageIcon
           src={voivodeshipImg} 
           alt=''
-          />Wojewódźtwo: {city.voivodeship}</p>
-      <p className={styles.info}>
-        <img 
-          className={styles.imgIcon} 
+          />Wojewódźtwo: {city.voivodeship}
+        </Info>
+      <Info>
+        <ImageIcon 
           src={populImg} 
           alt=''
           />Populacja: {city.population} mieszkańców
-      </p>
-      <p className={styles.info}>
-        <img 
-          className={styles.imgIcon} 
+      </Info>
+      <Info>
+        <ImageIcon 
           src={surfaceImg} 
           alt=''
           />Obszar: {city.surface} km²
-      </p>
-      <img 
+      </Info>
+      <Image 
         src={city.img} 
         alt="img"
-        className={styles.img} />
-    </div>
+        />
+    </ItemWrapper>
   )
 }
 
