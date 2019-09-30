@@ -1,26 +1,25 @@
 import React from 'react';
-import styles from './Search.module.scss';
 import Button from '../Button/Button';
 import PropTypes from 'prop-types';
+import {SearchWrapper,Input,Label,FormItemBar} from './SearchStyled';
 
 const Search = ({filter,value,resetFn}) => {
   return(
-    <div className={styles.wrapper}>
-      <input
+    <SearchWrapper>
+      <Input
         autoComplete="off" 
         type="text"
         id="name"
         onChange={filter}
         value={value}
-        className={styles.input}
         placeholder=" "
       />
-      <label className={styles.label} htmlFor="name">
+      <Label htmlFor="name">
           Wpisz nazwę miasta
-      </label>
-      <div className={styles.formItemBar} />
+      </Label>
+      <FormItemBar/>
       {value !== '' ? <Button resetFn={resetFn}/> : null}
-    </div>
+    </SearchWrapper>
   )
 }
 
