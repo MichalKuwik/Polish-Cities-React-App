@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Polish-Cities-React-App/static/css/main.79301360.chunk.css",
-    "main.js": "/Polish-Cities-React-App/static/js/main.4cdca85e.chunk.js",
-    "main.js.map": "/Polish-Cities-React-App/static/js/main.4cdca85e.chunk.js.map",
+    "main.css": "/Polish-Cities-React-App/static/css/main.366d513b.chunk.css",
+    "main.js": "/Polish-Cities-React-App/static/js/main.239c9ad4.chunk.js",
+    "main.js.map": "/Polish-Cities-React-App/static/js/main.239c9ad4.chunk.js.map",
     "runtime~main.js": "/Polish-Cities-React-App/static/js/runtime~main.229ae2d0.js",
     "runtime~main.js.map": "/Polish-Cities-React-App/static/js/runtime~main.229ae2d0.js.map",
-    "static/js/2.6c4f0c99.chunk.js": "/Polish-Cities-React-App/static/js/2.6c4f0c99.chunk.js",
-    "static/js/2.6c4f0c99.chunk.js.map": "/Polish-Cities-React-App/static/js/2.6c4f0c99.chunk.js.map",
+    "static/js/2.d482fbde.chunk.js": "/Polish-Cities-React-App/static/js/2.d482fbde.chunk.js",
+    "static/js/2.d482fbde.chunk.js.map": "/Polish-Cities-React-App/static/js/2.d482fbde.chunk.js.map",
     "index.html": "/Polish-Cities-React-App/index.html",
-    "precache-manifest.ba3862a0b431b5df63184667f012f4a1.js": "/Polish-Cities-React-App/precache-manifest.ba3862a0b431b5df63184667f012f4a1.js",
+    "precache-manifest.b01f701bd93fa1a92d6984d555d14ad9.js": "/Polish-Cities-React-App/precache-manifest.b01f701bd93fa1a92d6984d555d14ad9.js",
     "service-worker.js": "/Polish-Cities-React-App/service-worker.js",
-    "static/css/main.79301360.chunk.css.map": "/Polish-Cities-React-App/static/css/main.79301360.chunk.css.map",
+    "static/css/main.366d513b.chunk.css.map": "/Polish-Cities-React-App/static/css/main.366d513b.chunk.css.map",
     "static/media/cities.png": "/Polish-Cities-React-App/static/media/cities.d068730e.png"
   }
 }

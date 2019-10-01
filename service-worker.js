@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Polish-Cities-React-App/precache-manifest.ba3862a0b431b5df63184667f012f4a1.js"
+  "/Polish-Cities-React-App/precache-manifest.b01f701bd93fa1a92d6984d555d14ad9.js"
 );
 
 self.addEventListener('message', (event) => {
