@@ -14,6 +14,8 @@
      
      -React Router,
      
+     -Styled components
+     
      -My own API,
      
      -PropTypes,
